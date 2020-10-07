@@ -1,0 +1,50 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+    top: 30px;
+  }
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.listItem__wrapper {
+  max-width: 800px;
+  list-style: none;
+  margin: 0;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  animation: appear 0.5s ease;
+}
+.listItem__image {
+  border: 3px solid rgb(75, 100, 180);
+  flex-shrink: 0;
+  margin-right: 30px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.listItem__name {
+  font-weight: 700;
+  color: rgb(75, 100, 180);
+  padding: 0 15px 15px 0;
+}
+.listItem__description {
+  font-weight: 300;
+  padding: 5px;
+}
+.listItem__button {
+  position: absolute;
+  color: rgb(75, 100, 180);
+  border: 2px solid rgb(75, 100, 180);
+  background: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 3px 5px;
+  margin-top: 10px;
+  text-decoration: none;
+}
